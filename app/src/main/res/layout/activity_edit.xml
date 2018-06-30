@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/edt_page_bar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entry Title"
+        android:paddingStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/edt_page_bar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#101010"
+        android:textColorHint="#2d2929"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/edtTxtTitle"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:hint="Your Entry Here"
+        android:paddingStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textDirection="firstStrongLtr"
+        android:layout_below="@id/edtTxtTitle"
+        android:textSize="20sp"
+        android:id="@+id/edtTxtDetails"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="154dp" />
+
+
+</RelativeLayout>
